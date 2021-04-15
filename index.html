@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Korapay Book Club</title>
+    <link rel="stylesheet" href="./css/style.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/flickity.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav_bar">
+        <div class="nav_bar_header">
+          <div class="nav_bar_header_hamburger">
+            <img id="toggle-sidebar" src="./assets/images/hamburger.png" />
+          </div>
+          <div class="nav_bar_header_image">
+            <img src="./assets/images/logo.svg" />
+          </div>
+          <div class="nav_bar_header_h3">
+            <h1>Korapay Book Club</h1>
+            <p>Admin</p>
+          </div>
+        </div>
+        <div class="search">
+          <input
+            type="text"
+            class="search_input"
+            id="search_input"
+            placeholder="Search books, genres, authors, etc."
+          />
+          <button>
+            <img src="./assets/images/search.svg" />
+          </button>
+          <ul id="suggestions" class="suggestions">
+            <li>Built to Last Eric Reis</li>
+            <li>Built to Last Eric Reis</li>
+            <li>Built to Last Eric Reis</li>
+            <li>Built to Last Eric Reis</li>
+          </ul>
+        </div>
+        <div class="nav_bar_desk">
+          <div class="images">
+            <img src="./assets/images/Shape.svg" />
+          </div>
+          <div class="images" id="notification">
+            <img src="./assets/images/notification.svg" />
+            <span class="active_numbers">3</span>
+          </div>
+          <div class="profile">
+            <img src="./assets/images/maxresdefault.jpg" class="profile_pic" />
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main class="main_dashboard">
+      <aside class="side_bar" id="side_bar">
+        <div class="side_bar_back_arrow" id="side_bar_back_arrow">
+          <img src="./assets/images/back-arrow.png" />
+        </div>
+        <div class="side_bar_header" id="side_bar_header">
+          <div class="side_bar_header_image">
+            <img src="./assets/images/logo.svg" />
+          </div>
+          <div class="side_bar_header_h3">
+            <h1>Korapay Book Club</h1>
+            <p>Admin</p>
+          </div>
+        </div>
+        <div class="side_bar_container" id="side_bar_container">
+          <ul>
+            <li class="active">Home</li>
+            <li>Profile</li>
+            <li>
+              Notifications <span class="active_numbers"><p>3</p></span>
+            </li>
+          </ul>
+        </div>
+        <div class="side_bar_container">
+          <ul>
+            <li class="side_bar_header">Explore</li>
+            <li>Books <span class="numbers">273</span></li>
+            <li>Genres <span class="numbers">42</span></li>
+            <li>Authors <span class="numbers">106</span></li>
+          </ul>
+        </div>
+        <div class="side_bar_container">
+          <ul>
+            <li class="side_bar_header">My Books</li>
+            <li>Queued <span class="numbers">3</span></li>
+            <li>Currently Borrowed <span class="numbers">0</span></li>
+            <li>Favorites <span class="numbers">19</span></li>
+            <li>History</li>
+          </ul>
+        </div>
+        
+      </aside>
+      <section class="dashboard">
+        <div>
+          <div class="dashboard_header">
+            <p>FEATURED BOOKS</p>
+            <hr />
+          </div>
+
+          <div class="carousel" data-flickity='{ "wrapAround": true }'>
+            <div class="carousel-cell dashboard_book_card" id="carousel-cell">
+              <div class="carousel-overlay">
+                <div class="dashboard_small_book_informations">
+                <p class="card_active">Available</p>
+                <p class="card_header">The Effective Engineer</p>
+                <p>Edmond Lau - 2009</p>
+                <p>Motivational</p>
+                <div class="ratings">
+                  <div>
+                    <p>Ratings: 4.0</p>
+                    <div class="stars">
+                      <img src="./assets/images/no-star.png" alt="">
+                      <img src="./assets/images/no-star.png" alt="">
+                      <img src="./assets/images/no-star.png" alt="">
+                      <img src="./assets/images/no-star.png" alt="">
+                      <img src="./assets/images/no-star.png" alt="">
+                    </div>
+                  </div>
+                  <div>
+                    <div class="border">
+                      <div class="favorites">
+                        <div class="favorite_card">
+                          <img
+                            src="./assets/images/peep/1x/outline_people_white_24dp.png"
+                          />
+                          <p>31</p>
+                        </div>
+                        <div class="favorite_card">
+                          <img
+                            src="./assets/images/favourite/1x/outline_favorite_border_white_24dp.png"
+                          />
+                          <p>29</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+              <img
+                src="./assets/images/big magic.png"
+                class="dashboard_book_card_image"
+              />
+            </div>
+
+            <div class="carousel-cell dashboard_book_card">
+              <div class="carousel-overlay">
+                <div class="dashboard_small_book_informations">
+                <p class="card_active">Available</p>
+                <p class="card_header">The Effective Engineer</p>
+                <p>Edmond Lau - 2009</p>
+                <p>Motivational</p>
+                <div class="ratings">
+                  <div>
+                    <p>Ratings: 4.0</p>
+                    <div class="stars">
+                      <img src="./assets/images/no-star.png" alt="">
+                      <img src="./assets/images/no-star.png" alt="">
+                      <img src="./assets/images/no-star.png" alt="">
+                      <img src="./assets/images/no-star.png" alt="">
+                      <img src="./assets/images/no-star.png" alt="">
+                    </div>
+                  </div>
+                  <div>
+                    <div class="border">
+                      <div class="favorites">
+                        <div class="favorite_card">
+                          <img
+                            src="./assets/images/peep/1x/outline_people_white_24dp.png"
+                          />
+                          <p>31</p>
+                        </div>
+                        <div class="favorite_card">
+                          <img
+                            src="./assets/images/favourite/1x/outline_favorite_border_white_24dp.png"
+                          />
+                          <p>29</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+              <img
+                src="./assets/images/effective python.png"
+                class="dashboard_book_card_image"
+              />
+            </div>
+
+            <div class="carousel-cell dashboard_book_card">
+              <div class="carousel-overlay">
+                <div class="dashboard_small_book_informations">
+                <p class="card_active">Available</p>
+                <p class="card_header">The Effective Engineer</p>
+                <p>Edmond Lau - 2009</p>
+                <p>Motivational</p>
+                <div class="ratings">
+                  <div>
+                    <p>Ratings: 4.0</p>
+                    <div class="stars">
+                      <img src="./assets/images/no-star.png" alt="">
+                      <img src="./assets/images/no-star.png" alt="">
+                      <img src="./assets/images/no-star.png" alt="">
+                      <img src="./assets/images/no-star.png" alt="">
+                      <img src="./assets/images/no-star.png" alt="">
+                    </div>
+                  </div>
+                  <div>
+                    <div class="border">
+                      <div class="favorites">
+                        <div class="favorite_card">
+                          <img
+                            src="./assets/images/peep/1x/outline_people_white_24dp.png"
+                          />
+                          <p>31</p>
+                        </div>
+                        <div class="favorite_card">
+                          <img
+                            src="./assets/images/favourite/1x/outline_favorite_border_white_24dp.png"
+                          />
+                          <p>29</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+              <img
+                src="./assets/images/built to last.png"
+                class="dashboard_book_card_image"
+              />
+            </div>
+
+            <div class="carousel-cell dashboard_book_card">
+              <div class="carousel-overlay"><div class="dashboard_small_book_informations">
+                <p class="card_active">Available</p>
+                <p class="card_header">The Effective Engineer</p>
+                <p>Edmond Lau - 2009</p>
+                <p>Motivational</p>
+                <div class="ratings">
+                  <div>
+                    <p>Ratings: 4.0</p>
+                    <div class="stars">
+                      <img src="./assets/images/no-star.png" alt="">
+                      <img src="./assets/images/no-star.png" alt="">
+                      <img src="./assets/images/no-star.png" alt="">
+                      <img src="./assets/images/no-star.png" alt="">
+                      <img src="./assets/images/no-star.png" alt="">
+                    </div>
+                  </div>
+                  <div>
+                    <div class="border">
+                      <div class="favorites">
+                        <div class="favorite_card">
+                          <img
+                            src="./assets/images/peep/1x/outline_people_white_24dp.png"
+                          />
+                          <p>31</p>
+                        </div>
+                        <div class="favorite_card">
+                          <img
+                            src="./assets/images/favourite/1x/outline_favorite_border_white_24dp.png"
+                          />
+                          <p>29</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+              <img
+                src="./assets/images/the lean startup.png"
+                class="dashboard_book_card_image"
+              />
+            </div>
+            <div class="carousel-cell dashboard_book_card" id="carousel-cell">
+              <div class="carousel-overlay"><div class="dashboard_small_book_informations">
+                <p class="card_active">Available</p>
+                <p class="card_header">The Effective Engineer</p>
+                <p>Edmond Lau - 2009</p>
+                <p>Motivational</p>
+                <div class="ratings">
+                  <div>
+                    <p>Ratings: 4.0</p>
+                    <div class="stars">
+                      <img src="./assets/images/no-star.png" alt="">
+                      <img src="./assets/images/no-star.png" alt="">
+                      <img src="./assets/images/no-star.png" alt="">
+                      <img src="./assets/images/no-star.png" alt="">
+                      <img src="./assets/images/no-star.png" alt="">
+                    </div>
+                  </div>
+                  <div>
+                    <div class="border">
+                      <div class="favorites">
+                        <div class="favorite_card">
+                          <img
+                            src="./assets/images/peep/1x/outline_people_white_24dp.png"
+                          />
+                          <p>31</p>
+                        </div>
+                        <div class="favorite_card">
+                          <img
+                            src="./assets/images/favourite/1x/outline_favorite_border_white_24dp.png"
+                          />
+                          <p>29</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+              <img
+                src="./assets/images/big magic.png"
+                class="dashboard_book_card_image"
+              />
+            </div>
+          </div>
+
+          <div class="test"><hr /></div>
+        </div>
+
+        <div>
+          <div class="dashboard_header">
+            <p>RECENTLY ADDED</p>
+            <hr />
+          </div>
+          <div>
+            <div class="dashboard_small_book">
+              <div class="dashboard_small_book_card">
+                <div>
+                  <img src="./assets/images/effective engineer small.png" />
+                </div>
+                <div class="dashboard_small_book_information">
+                  <p class="card_active">Available</p>
+                  <p class="card_header">The Effective Engineer</p>
+                  <p>Edmond Lau - 2009</p>
+                  <p>Motivational</p>
+                  <div class="ratings">
+                    <div>
+                      <p>Ratings: 4.0</p>
+                      <div class="stars">
+                        <img src="./assets/images/no-star.png" alt="">
+                        <img src="./assets/images/no-star.png" alt="">
+                        <img src="./assets/images/no-star.png" alt="">
+                        <img src="./assets/images/no-star.png" alt="">
+                      </div>
+                    </div>
+                    <div>
+                      <div class="border">
+                        <div class="favorites">
+                          <div class="favorite_card">
+                            <img
+                              src="./assets/images/people/1x/outline_people_outline_black_24dp.png"
+                            />
+                            <p>31</p>
+                          </div>
+                          <div class="favorite_card">
+                            <img
+                              src="./assets/images/love/1x/outline_favorite_border_black_24dp.png"
+                            />
+                            <p>29</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dashboard_small_book_card" id="card2">
+                <div>
+                  <img src="./assets/images/built to last small.png" />
+                </div>
+                <div class="dashboard_small_book_information">
+                  <p class="card_active" id="borrowed">Borrowed out</p>
+                  <p class="card_header">Built to Last</p>
+                  <p>Jim Collins, Jerry I. Porras - 2001</p>
+                  <p>Motivational</p>
+                  <div class="ratings">
+                    <div>
+                      <p>Ratings: 4.0</p>
+                      <div class="stars">
+                        <img src="./assets/images/no-star.png" alt="">
+                        <img src="./assets/images/no-star.png" alt="">
+                        <img src="./assets/images/no-star.png" alt="">
+                        <img src="./assets/images/no-star.png" alt="">
+                      </div>
+                    </div>
+                    <div>
+                      <div class="border">
+                        <div class="favorites">
+                          <div class="favorite_card">
+                            <img
+                              src="./assets/images/people/1x/outline_people_outline_black_24dp.png"
+                            />
+                            <p>31</p>
+                          </div>
+                          <div class="favorite_card">
+                            <img
+                              src="./assets/images/love/1x/outline_favorite_border_black_24dp.png"
+                            />
+                            <p>29</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dashboard_small_book_card" id="card3">
+                <div>
+                  <img src="./assets/images/the lean startup small.png" />
+                </div>
+                <div class="dashboard_small_book_information">
+                  <p class="card_active">Available</p>
+                  <p class="card_header">The Effective Engineer</p>
+                  <p>Edmond Lau - 2009</p>
+                  <p>Motivational</p>
+                  <div class="ratings">
+                    <div>
+                      <p>Ratings: 4.0</p>
+                      <div class="stars">
+                        <img src="./assets/images/no-star.png" alt="">
+                        <img src="./assets/images/no-star.png" alt="">
+                        <img src="./assets/images/no-star.png" alt="">
+                        <img src="./assets/images/no-star.png" alt="">
+                      </div>
+                    </div>
+                    <div>
+                      <div class="border">
+                        <div class="favorites">
+                          <div class="favorite_card">
+                            <img
+                              src="./assets/images/people/1x/outline_people_outline_black_24dp.png"
+                            />
+                            <p>31</p>
+                          </div>
+                          <div class="favorite_card">
+                            <img
+                              src="./assets/images/love/1x/outline_favorite_border_black_24dp.png"
+                            />
+                            <p>29</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dashboard_small_book_card">
+                <div>
+                  <img src="./assets/images/effective python small.png" />
+                </div>
+                <div class="dashboard_small_book_information">
+                  <p class="card_active">Available</p>
+                  <p class="card_header">Effective Python</p>
+                  <p>Eric Reis - 2009</p>
+                  <p>Motivational</p>
+                  <div class="ratings">
+                    <div>
+                      <p>Ratings: 4.0</p>
+                      <div class="stars">
+                        <img src="./assets/images/no-star.png" alt="">
+                        <img src="./assets/images/no-star.png" alt="">
+                        <img src="./assets/images/no-star.png" alt="">
+                        <img src="./assets/images/no-star.png" alt="">
+                      </div>
+                    </div>
+                    <div>
+                      <div class="border">
+                        <div class="favorites">
+                          <div class="favorite_card">
+                            <img
+                              src="./assets/images/people/1x/outline_people_outline_black_24dp.png"
+                            />
+                            <p>31</p>
+                          </div>
+                          <div class="favorite_card">
+                            <img
+                              src="./assets/images/love/1x/outline_favorite_border_black_24dp.png"
+                            />
+                            <p>29</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dashboard_small_book_card" id="card5">
+                <div>
+                  <img src="./assets/images/small.png" />
+                </div>
+                <div class="dashboard_small_book_information">
+                  <p class="card_active">Available</p>
+                  <p class="card_header">The Effective Engineer</p>
+                  <p>Edmond Lau - 2009</p>
+                  <p>Motivational</p>
+                  <div class="ratings">
+                    <div>
+                      <p>Ratings: 4.0</p>
+                      <div class="stars">
+                        <img src="./assets/images/no-star.png" alt="">
+                        <img src="./assets/images/no-star.png" alt="">
+                        <img src="./assets/images/no-star.png" alt="">
+                        <img src="./assets/images/no-star.png" alt="">
+                      </div>
+                    </div>
+                    <div>
+                      <div class="border">
+                        <div class="favorites">
+                          <div class="favorite_card">
+                            <img
+                              src="./assets/images/people/1x/outline_people_outline_black_24dp.png"
+                            />
+                            <p>31</p>
+                          </div>
+                          <div class="favorite_card">
+                            <img
+                              src="./assets/images/love/1x/outline_favorite_border_black_24dp.png"
+                            />
+                            <p>29</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="dashboard_header">
+            <p>ALL BOOKS</p>
+            <hr />
+          </div>
+          <div>
+            <div class="dashboard_small_book">
+              <div class="dashboard_small_book_card">
+                <div>
+                  <img src="./assets/images/effective engineer small.png" />
+                </div>
+                <div class="dashboard_small_book_information">
+                  <p class="card_active">Available</p>
+                  <p class="card_header">The Effective Engineer</p>
+                  <p>Edmond Lau - 2009</p>
+                  <p>Motivational</p>
+                  <div class="ratings">
+                    <div>
+                      <p>Ratings: 4.0</p>
+                      <div class="stars">
+                        <img src="./assets/images/no-star.png" alt="">
+                        <img src="./assets/images/no-star.png" alt="">
+                        <img src="./assets/images/no-star.png" alt="">
+                        <img src="./assets/images/no-star.png" alt="">
+                      </div>
+                    </div>
+                    <div>
+                      <div class="border">
+                        <div class="favorites">
+                          <div class="favorite_card">
+                            <img
+                              src="./assets/images/people/1x/outline_people_outline_black_24dp.png"
+                            />
+                            <p>31</p>
+                          </div>
+                          <div class="favorite_card">
+                            <img
+                              src="./assets/images/love/1x/outline_favorite_border_black_24dp.png"
+                            />
+                            <p>29</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dashboard_small_book_card" id="card2">
+                <div>
+                  <img src="./assets/images/built to last small.png" />
+                </div>
+                <div class="dashboard_small_book_information">
+                  <p class="card_active" id="borrowed">Borrowed out</p>
+                  <p class="card_header">Built to Last</p>
+                  <p>Jim Collins, Jerry I. Porras - 2001</p>
+                  <p>Motivational</p>
+                  <div class="ratings">
+                    <div>
+                      <p>Ratings: 4.0</p>
+                      <div class="stars">
+                        <img src="./assets/images/no-star.png" alt="">
+                        <img src="./assets/images/no-star.png" alt="">
+                        <img src="./assets/images/no-star.png" alt="">
+                        <img src="./assets/images/no-star.png" alt="">
+                      </div>
+                    </div>
+                    <div>
+                      <div class="border">
+                        <div class="favorites">
+                          <div class="favorite_card">
+                            <img
+                              src="./assets/images/people/1x/outline_people_outline_black_24dp.png"
+                            />
+                            <p>31</p>
+                          </div>
+                          <div class="favorite_card">
+                            <img
+                              src="./assets/images/love/1x/outline_favorite_border_black_24dp.png"
+                            />
+                            <p>29</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dashboard_small_book_card" id="card3">
+                <div>
+                  <img src="./assets/images/the lean startup small.png" />
+                </div>
+                <div class="dashboard_small_book_information">
+                  <p class="card_active">Available</p>
+                  <p class="card_header">The Lean Startup</p>
+                  <p>Jim Collins, Jerry I. Porras - 2014</p>
+                  <p>Motivational</p>
+                  <div class="ratings">
+                    <div>
+                      <p>Ratings: 4.0</p>
+                      <div class="stars">
+                        <img src="./assets/images/no-star.png" alt="">
+                        <img src="./assets/images/no-star.png" alt="">
+                        <img src="./assets/images/no-star.png" alt="">
+                        <img src="./assets/images/no-star.png" alt="">
+                      </div>
+                    </div>
+                    <div>
+                      <div class="border">
+                        <div class="favorites">
+                          <div class="favorite_card">
+                            <img
+                              src="./assets/images/people/1x/outline_people_outline_black_24dp.png"
+                            />
+                            <p>31</p>
+                          </div>
+                          <div class="favorite_card">
+                            <img
+                              src="./assets/images/love/1x/outline_favorite_border_black_24dp.png"
+                            />
+                            <p>29</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dashboard_small_book_card">
+                <div>
+                  <img src="./assets/images/effective python small.png" />
+                </div>
+                <div class="dashboard_small_book_information">
+                  <p class="card_active">Available</p>
+                  <p class="card_header">Effective Python</p>
+                  <p>Eric Reis - 2009</p>
+                  <p>Motivational</p>
+                  <div class="ratings">
+                    <div>
+                      <p>Ratings: 4.0</p>
+                      <div class="stars">
+                        <img src="./assets/images/no-star.png" alt="">
+                        <img src="./assets/images/no-star.png" alt="">
+                        <img src="./assets/images/no-star.png" alt="">
+                        <img src="./assets/images/no-star.png" alt="">
+                      </div>
+                    </div>
+                    <div>
+                      <div class="border">
+                        <div class="favorites">
+                          <div class="favorite_card">
+                            <img
+                              src="./assets/images/people/1x/outline_people_outline_black_24dp.png"
+                            />
+                            <p>31</p>
+                          </div>
+                          <div class="favorite_card">
+                            <img
+                              src="./assets/images/love/1x/outline_favorite_border_black_24dp.png"
+                            />
+                            <p>29</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dashboard_small_book_card" id="card5">
+                <div>
+                  <img src="./assets/images/small.png" />
+                </div>
+                <div class="dashboard_small_book_information">
+                  <p class="card_active">Available</p>
+                  <p class="card_header">The Effective Engineer</p>
+                  <p>Edmond Lau - 2009</p>
+                  <p>Motivational</p>
+                  <div class="ratings">
+                    <div>
+                      <p>Ratings: 4.0</p>
+                      <div class="stars">
+                        <img src="./assets/images/no-star.png" alt="">
+                        <img src="./assets/images/no-star.png" alt="">
+                        <img src="./assets/images/no-star.png" alt="">
+                        <img src="./assets/images/no-star.png" alt="">
+                      </div>
+                    </div>
+                    <div>
+                      <div class="border">
+                        <div class="favorites">
+                          <div class="favorite_card">
+                            <img
+                              src="./assets/images/people/1x/outline_people_outline_black_24dp.png"
+                            />
+                            <p>31</p>
+                          </div>
+                          <div class="favorite_card">
+                            <img
+                              src="./assets/images/love/1x/outline_favorite_border_black_24dp.png"
+                            />
+                            <p>29</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dashboard_small_book_card" id="card3">
+                <div>
+                  <img src="./assets/images/the lean startup small.png" />
+                </div>
+                <div class="dashboard_small_book_information">
+                  <p class="card_active">Available</p>
+                  <p class="card_header">The Effective Engineer</p>
+                  <p>Edmond Lau - 2009</p>
+                  <p>Motivational</p>
+                  <div class="ratings">
+                    <div>
+                      <p>Ratings: 4.0</p>
+                      <div class="stars">
+                        <img src="./assets/images/no-star.png" alt="">
+                        <img src="./assets/images/no-star.png" alt="">
+                        <img src="./assets/images/no-star.png" alt="">
+                        <img src="./assets/images/no-star.png" alt="">
+                      </div>
+                    </div>
+                    <div>
+                      <div class="border">
+                        <div class="favorites">
+                          <div class="favorite_card">
+                            <img
+                              src="./assets/images/people/1x/outline_people_outline_black_24dp.png"
+                            />
+                            <p>31</p>
+                          </div>
+                          <div class="favorite_card">
+                            <img
+                              src="./assets/images/love/1x/outline_favorite_border_black_24dp.png"
+                            />
+                            <p>29</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dashboard_small_book_card">
+                <div>
+                  <img src="./assets/images/effective engineer small.png" />
+                </div>
+                <div class="dashboard_small_book_information">
+                  <p class="card_active">Available</p>
+                  <p class="card_header">The Effective Engineer</p>
+                  <p>Edmond Lau - 2009</p>
+                  <p>Motivational</p>
+                  <div class="ratings">
+                    <div>
+                      <p>Ratings: 4.0</p>
+                      <div class="stars">
+                        <img src="./assets/images/no-star.png" alt="">
+                        <img src="./assets/images/no-star.png" alt="">
+                        <img src="./assets/images/no-star.png" alt="">
+                        <img src="./assets/images/no-star.png" alt="">
+                      </div>
+                    </div>
+                    <div>
+                      <div class="border">
+                        <div class="favorites">
+                          <div class="favorite_card">
+                            <img
+                              src="./assets/images/people/1x/outline_people_outline_black_24dp.png"
+                            />
+                            <p>31</p>
+                          </div>
+                          <div class="favorite_card">
+                            <img
+                              src="./assets/images/love/1x/outline_favorite_border_black_24dp.png"
+                            />
+                            <p>29</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dashboard_small_book_card" id="card2">
+                <div>
+                  <img src="./assets/images/built to last small.png" />
+                </div>
+                <div class="dashboard_small_book_information">
+                  <p class="card_active" id="borrowed">Borrowed out</p>
+                  <p class="card_header">Built to Last</p>
+                  <p>Jim Collins, Jerry I. Porras - 2001</p>
+                  <p>Motivational</p>
+                  <div class="ratings">
+                    <div>
+                      <p>Ratings: 4.0</p>
+                      <div class="stars">
+                        <img src="./assets/images/no-star.png" alt="">
+                        <img src="./assets/images/no-star.png" alt="">
+                        <img src="./assets/images/no-star.png" alt="">
+                        <img src="./assets/images/no-star.png" alt="">
+                      </div>
+                    </div>
+                    <div>
+                      <div class="border">
+                        <div class="favorites">
+                          <div class="favorite_card">
+                            <img
+                              src="./assets/images/people/1x/outline_people_outline_black_24dp.png"
+                            />
+                            <p>31</p>
+                          </div>
+                          <div class="favorite_card">
+                            <img
+                              src="./assets/images/love/1x/outline_favorite_border_black_24dp.png"
+                            />
+                            <p>29</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dashboard_small_book_card" id="card3">
+                <div>
+                  <img src="./assets/images/the lean startup small.png" />
+                </div>
+                <div class="dashboard_small_book_information">
+                  <p class="card_active">Available</p>
+                  <p class="card_header">The Effective Engineer</p>
+                  <p>Edmond Lau - 2009</p>
+                  <p>Motivational</p>
+                  <div class="ratings">
+                    <div>
+                      <p>Ratings: 4.0</p>
+                      <div class="stars">
+                        <img src="./assets/images/no-star.png" alt="">
+                        <img src="./assets/images/no-star.png" alt="">
+                        <img src="./assets/images/no-star.png" alt="">
+                        <img src="./assets/images/no-star.png" alt="">
+                      </div>
+                    </div>
+                    <div>
+                      <div class="border">
+                        <div class="favorites">
+                          <div class="favorite_card">
+                            <img
+                              src="./assets/images/people/1x/outline_people_outline_black_24dp.png"
+                            />
+                            <p>31</p>
+                          </div>
+                          <div class="favorite_card">
+                            <img
+                              src="./assets/images/love/1x/outline_favorite_border_black_24dp.png"
+                            />
+                            <p>29</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dashboard_small_book_card">
+                <div>
+                  <img src="./assets/images/effective python small.png" />
+                </div>
+                <div class="dashboard_small_book_information">
+                  <p class="card_active">Available</p>
+                  <p class="card_header">Effective Python</p>
+                  <p>Eric Reis - 2009</p>
+                  <p>Motivational</p>
+                  <div class="ratings">
+                    <div>
+                      <p>Ratings: 4.0</p>
+                      <div class="stars">
+                        <img src="./assets/images/no-star.png" alt="">
+                        <img src="./assets/images/no-star.png" alt="">
+                        <img src="./assets/images/no-star.png" alt="">
+                        <img src="./assets/images/no-star.png" alt="">
+                      </div>
+                    </div>
+                    <div>
+                      <div class="border">
+                        <div class="favorites">
+                          <div class="favorite_card">
+                            <img
+                              src="./assets/images/people/1x/outline_people_outline_black_24dp.png"
+                            />
+                            <p>31</p>
+                          </div>
+                          <div class="favorite_card">
+                            <img
+                              src="./assets/images/love/1x/outline_favorite_border_black_24dp.png"
+                            />
+                            <p>29</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dashboard_small_book_card" id="card5">
+                <div>
+                  <img src="./assets/images/small.png" />
+                </div>
+                <div class="dashboard_small_book_information">
+                  <p class="card_active">Available</p>
+                  <p class="card_header">The Effective Engineer</p>
+                  <p>Edmond Lau - 2009</p>
+                  <p>Motivational</p>
+                  <div class="ratings">
+                    <div>
+                      <p>Ratings: 4.0</p>
+                      <div class="stars">
+                        <img src="./assets/images/no-star.png" alt="">
+                        <img src="./assets/images/no-star.png" alt="">
+                        <img src="./assets/images/no-star.png" alt="">
+                        <img src="./assets/images/no-star.png" alt="">
+                      </div>
+                    </div>
+                    <div>
+                      <div class="border">
+                        <div class="favorites">
+                          <div class="favorite_card">
+                            <img
+                              src="./assets/images/people/1x/outline_people_outline_black_24dp.png"
+                            />
+                            <p>31</p>
+                          </div>
+                          <div class="favorite_card">
+                            <img
+                              src="./assets/images/love/1x/outline_favorite_border_black_24dp.png"
+                            />
+                            <p>29</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dashboard_small_book_card" id="card3">
+                <div>
+                  <img src="./assets/images/the lean startup small.png" />
+                </div>
+                <div class="dashboard_small_book_information">
+                  <p class="card_active">Available</p>
+                  <p class="card_header">The Effective Engineer</p>
+                  <p>Edmond Lau - 2009</p>
+                  <p>Motivational</p>
+                  <div class="ratings">
+                    <div>
+                      <p>Ratings: 4.0</p>
+                      <div class="stars">
+                        <img src="./assets/images/no-star.png" alt="">
+                        <img src="./assets/images/no-star.png" alt="">
+                        <img src="./assets/images/no-star.png" alt="">
+                        <img src="./assets/images/no-star.png" alt="">
+                      </div>
+                    </div>
+                    <div>
+                      <div class="border">
+                        <div class="favorites">
+                          <div class="favorite_card">
+                            <img
+                              src="./assets/images/people/1x/outline_people_outline_black_24dp.png"
+                            />
+                            <p>31</p>
+                          </div>
+                          <div class="favorite_card">
+                            <img
+                              src="./assets/images/love/1x/outline_favorite_border_black_24dp.png"
+                            />
+                            <p>29</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dashboard_small_book_card">
+                <div>
+                  <img src="./assets/images/effective engineer small.png" />
+                </div>
+                <div class="dashboard_small_book_information">
+                  <p class="card_active">Available</p>
+                  <p class="card_header">The Effective Engineer</p>
+                  <p>Edmond Lau - 2009</p>
+                  <p>Motivational</p>
+                  <div class="ratings">
+                    <div>
+                      <p>Ratings: 4.0</p>
+                      <div class="stars">
+                        <img src="./assets/images/no-star.png" alt="">
+                        <img src="./assets/images/no-star.png" alt="">
+                        <img src="./assets/images/no-star.png" alt="">
+                        <img src="./assets/images/no-star.png" alt="">
+                      </div>
+                    </div>
+                    <div>
+                      <div class="border">
+                        <div class="favorites">
+                          <div class="favorite_card">
+                            <img
+                              src="./assets/images/people/1x/outline_people_outline_black_24dp.png"
+                            />
+                            <p>31</p>
+                          </div>
+                          <div class="favorite_card">
+                            <img
+                              src="./assets/images/love/1x/outline_favorite_border_black_24dp.png"
+                            />
+                            <p>29</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

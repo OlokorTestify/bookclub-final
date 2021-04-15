@@ -1,0 +1,438 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+  }
+  hr {
+    border: 1px solid #eeeeee;
+  }
+  
+  nav {
+    box-shadow: 19px 20px 40px rgba(0, 0, 0, 0.1);
+    border: 1px solid #eeeeee;
+    background: #ffffff;
+    opacity: 0.97;
+    width: 100%;
+    height: 6.25rem;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+  }
+  .nav_bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+  }
+  
+  .nav_bar .nav_bar_header {
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+  }
+  
+  .nav_bar .nav_bar_header .nav_bar_header_image {
+    margin-top: 1.6rem;
+    cursor: pointer;
+  }
+  
+  .nav_bar .nav_bar_header .nav_bar_header_h3 {
+    margin-left: 1rem;
+    cursor: pointer;
+  }
+  
+  .nav_bar .nav_bar_header .nav_bar_header_h3 h1 {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: -0.7rem;
+    margin-top: 2rem;
+  }
+  
+  .nav_bar .nav_bar_header .nav_bar_header_h3 p {
+    font-size: 12px;
+    line-height: 14px;
+    color: #aaaaaa;
+  }
+  .nav_bar .search {
+    margin-top: 1rem;
+    width: 50%;
+    position: relative;
+  }
+  .nav_bar .search .search_input {
+    margin-left: 3rem;
+    width: 501px;
+    height: 40px;
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    box-sizing: border-box;
+    padding: 0.9rem 1rem;
+    cursor: pointer;
+  }
+  
+  .nav_bar .search .search_input::placeholder {
+    position: absolute;
+    left: 21px;
+    right: 22px;
+    top: 11px;
+    bottom: 12px;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: flex-end;
+    color: #999999;
+  }
+  
+  .nav_bar .search button {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: #f9f9fb;
+    border: 1px solid #dddddd;
+    cursor: pointer;
+  }
+  
+  .nav_bar .search .suggestions {
+    position: absolute;
+    display: flex;
+    background-color: white;
+    list-style-type: none;
+    flex-direction: column;
+    transition: height 0.3 ease-in-out;
+    height: 0;
+    opacity: 1;
+    overflow: hidden;
+    top: 40px;
+    left: 0;
+    width: 70%;
+    margin-left: 3rem;
+  }
+  .nav_bar .search .suggestions li {
+    width: 100%;
+    padding: 4px 4px;
+    font-size: 0.875rem;
+    color: var(--gray-dark);
+    height: 2.5rem;
+    cursor: pointer;
+  }
+  .nav_bar .search .show-suggestions {
+    height: 10rem;
+    z-index: 200;
+  }
+  
+  .nav_bar .nav_bar_desk {
+    display: flex;
+    flex-direction: row;
+    width: 12%;
+    align-items: center;
+    cursor: pointer;
+  }
+  .nav_bar .nav_bar_desk .images img {
+    height: 30px;
+    width: 30px;
+  }
+  #notification {
+    margin-left: 1.5rem;
+  }
+  #notification  .active_numbers {
+    display: flex;
+    position: absolute;
+    top: 1.1rem;
+    right: 5.7rem;
+    align-items: center;
+    /* text-align: center; */
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 12px;
+    background-color: #65c100;
+    color: #ffffff;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 10px;
+}
+#notification .active_numbers p{
+  margin-left: 0.3rem;
+}
+
+.nav_bar .nav_bar_desk .profile {
+  border-radius: 50px;
+  width: 50px;
+  margin-top: 0.9rem;
+  height: 50px;
+  margin-left: 1.5rem;
+  border: 1px solid #ffffff;
+  filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.1));
+}
+  .nav_bar .nav_bar_desk .profile_pic {
+    border-radius: 50px;
+    width: 100%;
+  }
+  
+  .main_dashboard {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .side_bar {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    padding-top: 9rem;
+    background: #ffffff;
+    box-shadow: 19px 20px 40px rgb(0 0 0 / 10%);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+  }
+  
+  .side_bar .side_bar_container {
+    border-bottom: 1px solid #eeeeee;
+  }
+  
+  .side_bar ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    list-style-type: none;
+    margin-top: 0.6rem;
+    font-size: 14px;
+    line-height: 16px;
+    align-items: flex-end;
+    line-height: 16.09px;
+    color: #000000;
+    cursor: pointer;
+  }
+  
+  .side_bar .side_bar_container ul .active {
+    font-weight: 500;
+    color: #65c100;
+  }
+  .side_bar .side_bar_container ul li .active_numbers {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 12px;
+    background-color: #65c100;
+    color: #ffffff;
+    height: 1.25rem;
+    width: 1.5rem;
+    border-radius: 10px;
+  }
+  .side_bar .side_bar_container ul li .active_numbers p {
+    margin-left: 0.5rem;
+  }
+  .side_bar ul .side_bar_header {
+    font-weight: 700;
+    margin-bottom: 1rem;
+    margin-top: 2.6rem;
+  }
+  .numbers{
+      opacity: 0.4;
+  }
+  
+  .main_dashboard .dashboard {
+    margin-left: 20rem;
+    margin-top: 6rem;
+    overflow-x: hidden;
+  }
+  
+  .main_dashboard .dashboard .test {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  
+  .main_dashboard .dashboard .dashboard_header {
+    margin-left: 2.5rem;
+    width: 94.5%;
+    margin-top: 2rem;
+  }
+  
+  .main_dashboard .dashboard .dashboard_header p {
+    line-height: 16px;
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: 3px;
+  }
+  
+  .main_dashboard .dashboard .dashboard_header hr {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  
+  .main_dashboard .dashboard .dashboard_book_main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+  
+  .main_dashboard .dashboard .dashboard_book_card {
+    box-shadow: 0px 16px 45px 0px rgb(0 0 0 / 55%);
+    width: 14rem;
+    height: 20rem;
+    margin-right: 30px;
+    position: relative;
+  }
+  
+  .main_dashboard .dashboard .dashboard_book_card .carousel-overlay {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.2s ease-in-out;
+    background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.3)
+    );
+    transition: opacity 0.5s ease-in-out;
+    z-index: 20;
+    position: absolute;
+    top: 0;
+  }
+
+  
+  
+  .main_dashboard .dashboard .dashboard_book_card:hover .carousel-overlay {
+    opacity: 1;
+  }
+  
+  .main_dashboard .dashboard .dashboard_book_card .dashboard_book_card_image {
+    width: 100%;
+    height: 100%;
+  }
+  
+  #absolute {
+    margin-left: 2rem;
+  }
+
+  #borrowed{
+    color: rgba(192, 10, 10, 0.767);
+  }
+  
+  .dashboard .dashboard_small_book {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: 2.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  .dashboard .dashboard_small_book .dashboard_small_book_card {
+    display: flex;
+    flex-direction: row;
+    width: 29%;
+    margin-top: 1rem;
+    cursor: pointer;
+  }
+  
+  .dashboard
+    .dashboard_small_book
+    .dashboard_small_book_card
+    .dashboard_small_book_information {
+    margin-left: 1rem;
+  }
+  
+  .dashboard .dashboard_small_book .dashboard_small_book_card:hover {
+    box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.15);
+  }
+  
+  .dashboard .dashboard_small_book #card2 {
+    margin-left: 2.5rem;
+  }
+  .dashboard .dashboard_small_book #card3 {
+    margin-left: 2.5rem;
+  }
+  .dashboard .dashboard_small_book #card5 {
+    margin-left: 2.5rem;
+  }
+  
+  .dashboard .dashboard_small_book .dashboard_small_book_card p {
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    margin-bottom: -0.4rem;
+  }
+  
+  .dashboard .dashboard_small_book .dashboard_small_book_card .card_active {
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    color: #65c100;
+    font-size: 0.775rem;
+  }
+  
+  .dashboard .dashboard_small_book .dashboard_small_book_card .card_header {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: flex-end;
+    color: #000000;
+    margin-bottom: -0.4rem;
+  }
+  
+  .dashboard .dashboard_small_book .dashboard_small_book_card .ratings {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.5rem;
+  }
+  
+  .dashboard .dashboard_small_book .dashboard_small_book_card .ratings .border {
+    border-left: 1px solid #eeeeee;
+    margin-left: 1rem;
+  }
+  
+  .dashboard
+    .dashboard_small_book
+    .dashboard_small_book_card
+    .ratings
+    .border
+    .favorites {
+    display: flex;
+    flex-direction: row;
+    margin-left: 0.3rem;
+  }
+  .dashboard
+    .dashboard_small_book
+    .dashboard_small_book_card
+    .ratings
+    .favorites
+    .favorite_card {
+    margin-top: 0.6rem;
+    padding-left: 0.3rem;
+  }
+  
+  .dashboard
+    .dashboard_small_book
+    .dashboard_small_book_card
+    .ratings
+    .favorites
+    .favorite_card
+    img {
+    width: 0.8rem;
+    height: 0.8rem;
+  }
+  
+  .dashboard
+    .dashboard_small_book
+    .dashboard_small_book_card
+    .ratings
+    .favorites
+    .favorite_card
+    p {
+    margin-top: 0.2rem;
+  }
