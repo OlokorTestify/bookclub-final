@@ -5,6 +5,7 @@ const sideBarContent = document.getElementsByClassName("side_bar_container");
 const sideBarHeader = document.getElementById("side_bar_header");
 const suggestions = document.getElementById("suggestions");
 const searchInput = document.getElementById("search_input");
+
 let sideBarShowState = false;
 
 const toggleSideBar = () => {
